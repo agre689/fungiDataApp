@@ -6,16 +6,17 @@ library(dplyr)
 library(magrittr)
 library(tidyr)
 
+purrr::map(list.files("data", full.names = T), load, .GlobalEnv)
 source("R/source.R")
 
 bs_theme <- bslib::bs_theme(
   bootswatch = "darkly",
   # base_font = bslib::font_google("Inter"),
   navbar_bg = "#1CA498"
-) %>% 
+) %>%
   bslib::bs_add_rules(
     "
-    .btn.btn-default.action-button.valuebox_btn.shiny-bound-input { 
+    .btn.btn-default.action-button.valuebox_btn.shiny-bound-input {
       padding: 0px !important;
     }
     .card.bslib-card.bslib-mb-spacing.html-fill-item.html-fill-container.bslib-value-box.bg-info {
