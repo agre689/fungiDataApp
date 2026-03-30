@@ -1,0 +1,4 @@
+^renv$
+^renv\.lock$
+^fungiDataApp\.Rproj$
+^\.Rproj\.user$

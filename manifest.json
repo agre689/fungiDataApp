@@ -1,0 +1,283 @@
+{
+  "version": 1,
+  "locale": "en_US",
+  "platform": "4.5.1",
+  "metadata": {
+    "appmode": "shiny",
+    "primary_rmd": null,
+    "primary_html": null,
+    "content_category": null,
+    "has_parameters": false
+  },
+  "environment": {
+    "r": {
+      "requires": "~=4.5.0"
+    }
+  },
+  "packages": {
+    "renv": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "renv",
+        "Type": "Package",
+        "Title": "Project Environments",
+        "Version": "1.2.0",
+        "Authors@R": "c(\n    person(\"Kevin\", \"Ushey\", role = c(\"aut\", \"cre\"), email = \"kevin@rstudio.com\",\n           comment = c(ORCID = \"0000-0003-2880-7407\")),\n    person(\"Hadley\", \"Wickham\", role = c(\"aut\"), email = \"hadley@rstudio.com\",\n           comment = c(ORCID = \"0000-0003-4757-117X\")),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n    )",
+        "Description": "A dependency management toolkit for R. Using 'renv', you can create\n    and manage project-local R libraries, save the state of these libraries to\n    a 'lockfile', and later restore your library as required. Together, these\n    tools can help make your projects more isolated, portable, and reproducible.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://rstudio.github.io/renv/, https://github.com/rstudio/renv",
+        "BugReports": "https://github.com/rstudio/renv/issues",
+        "Imports": "utils",
+        "Suggests": "BiocManager, cli, compiler, covr, cpp11, curl, devtools,\ngenerics, gitcreds, jsonlite, jsonvalidate, knitr, miniUI,\nmodules, packrat, pak, R6, remotes, reticulate, rmarkdown,\nrstudioapi, shiny, testthat, uuid, waldo, yaml, webfakes",
+        "Encoding": "UTF-8",
+        "NeedsCompilation": "yes",
+        "RoxygenNote": "7.3.3",
+        "VignetteBuilder": "knitr",
+        "Config/Needs/website": "tidyverse/tidytemplate",
+        "Config/testthat/edition": "3",
+        "Config/testthat/parallel": "true",
+        "Config/testthat/start-first": "bioconductor,python,install,restore,snapshot,retrieve,remotes",
+        "Packaged": "2026-03-24 17:01:24 UTC; kevin",
+        "Author": "Kevin Ushey [aut, cre] (ORCID: <https://orcid.org/0000-0003-2880-7407>),\n  Hadley Wickham [aut] (ORCID: <https://orcid.org/0000-0003-4757-117X>),\n  Posit Software, PBC [cph, fnd]",
+        "Maintainer": "Kevin Ushey <kevin@rstudio.com>",
+        "Repository": "CRAN",
+        "Date/Publication": "2026-03-25 10:30:11 UTC",
+        "Built": "R 4.5.3; ; 2026-03-28 18:50:01 UTC; windows",
+        "RemoteType": "standard",
+        "RemotePkgRef": "renv",
+        "RemoteRef": "renv",
+        "RemoteRepos": "https://cran.rstudio.com",
+        "RemoteSha": "1.2.0"
+      }
+    }
+  },
+  "files": {
+    ".gitattributes": {
+      "checksum": "dcb240655dcbf79b8706d11c8c2a169c"
+    },
+    ".Rbuildignore": {
+      "checksum": "e9f1f6c6d4e96567e21a3dc338edc745"
+    },
+    ".Rprofile": {
+      "checksum": "a0a988c8bfdc7e9a24483981ef1d69d0"
+    },
+    "app.R": {
+      "checksum": "e34d1602887ea2e37ba355b90ff71fc3"
+    },
+    "data/co_tree.rda": {
+      "checksum": "3033d97ffdbe11d63ab576f1fa2c8918"
+    },
+    "data/data_brothscreening_auc.rda": {
+      "checksum": "6c65c89638ae5e023d03da4ce5806273"
+    },
+    "data/data_brothscreening_lux.rda": {
+      "checksum": "9b31d2a40d85db1ab4d7bea38bf41c1d"
+    },
+    "data/data_compounds_auc.rda": {
+      "checksum": "a8227b1d870ff76513f8cebd17c4c499"
+    },
+    "data/data_compounds_lux.rda": {
+      "checksum": "def07fd9b4b5239296c99a4968cbb365"
+    },
+    "data/data_extracts_auc.rda": {
+      "checksum": "20b9bf17b66bacba1d4b8403855e48e2"
+    },
+    "data/data_extracts_lux.rda": {
+      "checksum": "4c235aca3e3bb0dbea2959510ba3e72e"
+    },
+    "data/data_extracts_mbc.rda": {
+      "checksum": "9826aa35f3bac2b09f78c8cbc5b645fc"
+    },
+    "data/data_hplc_auc.rda": {
+      "checksum": "33b52fa3658bb6785cf4571a2b55392c"
+    },
+    "data/data_hplc_lux.rda": {
+      "checksum": "9a5a7b1a305431056cfd3524bf3e28fd"
+    },
+    "data/data_jzhplc_auc.rda": {
+      "checksum": "a6a666081e549f745cda151b071733f0"
+    },
+    "data/data_jzhplc_lux.rda": {
+      "checksum": "f9c53b437fbdedbabd3a5a2dae29caba"
+    },
+    "data/data_jzscreening_auc.rda": {
+      "checksum": "7eb1a566704751b7fa731797a43010d3"
+    },
+    "data/data_jzscreening_lux.rda": {
+      "checksum": "5808e674a912ca0807068c2ce70033fa"
+    },
+    "data/data_screening_auc.rda": {
+      "checksum": "efee7193b35bbb09f850e9f92de6281a"
+    },
+    "data/data_screening_lux.rda": {
+      "checksum": "f49a4cb4b8069149f4107351384cf5a8"
+    },
+    "data/data_screening_yd.rda": {
+      "checksum": "a2b67a462d3092dffa69f1f1be8b52f4"
+    },
+    "data/data_screening_zoi.rda": {
+      "checksum": "5a70ecb9ffdad4339480b78d30f0bc3a"
+    },
+    "data/data_semipures_auc (Alexander Grey's conflicted copy 2025-10-01).rda": {
+      "checksum": "306f11bbda784cd420b7644fa215a9d0"
+    },
+    "data/data_semipures_auc.rda": {
+      "checksum": "3a6cf8335c062bb308549b4cbfaae2cb"
+    },
+    "data/data_semipures_lux.rda": {
+      "checksum": "7d56b7f1044c0986452f17ffe0d7214f"
+    },
+    "data/expt_metadata.rda": {
+      "checksum": "99a622a91c9a84b5187aebae6718ee16"
+    },
+    "data/expt_summaries.rda": {
+      "checksum": "d4e6201c5cd368e6e027931a50b2cbac"
+    },
+    "data/expt_summary_stats.rda": {
+      "checksum": "5212d2b51c822195d7aebf7084d22a3c"
+    },
+    "data/expt_summary_tables.rda": {
+      "checksum": "32f4a711fe6a48a70c8bc34ef6bc6770"
+    },
+    "data/g_tree.rda": {
+      "checksum": "7a6e18b2b518f8897fab105376ba90f4"
+    },
+    "data/isolate_info.rda": {
+      "checksum": "065312793e7513a5817e649dc84570d8"
+    },
+    "data/m_tree.rda": {
+      "checksum": "ab990a246ef1fb5528c33ac2ba3a79be"
+    },
+    "data/map_default.rda": {
+      "checksum": "d9127afd08c0d0f75333a15e62e945b0"
+    },
+    "data/map_default_lux.rda": {
+      "checksum": "902b7ed58de44ad1687efe9ca449eb4a"
+    },
+    "data/map_default_zoi.rda": {
+      "checksum": "9a7a72a40941239dafa816551d77d888"
+    },
+    "data/map_iwi_lux.rda": {
+      "checksum": "21c30f3d9aaff691a8e1c2f82bd93eff"
+    },
+    "data/map_iwi_zoi.rda": {
+      "checksum": "a0cfc5bd27b1485c2abcb3316d6474cd"
+    },
+    "data/map_leaflet_default.rda": {
+      "checksum": "dcd53fd7b458c8705944b18b464d6f97"
+    },
+    "data/map_leaflet_iwi.rda": {
+      "checksum": "4c623093330f38c61a245c88b92593db"
+    },
+    "data/map_leaflet_regions.rda": {
+      "checksum": "a4a93d8b8a5d73ad83eb1e01e269c004"
+    },
+    "data/map_leaflet_satellite.rda": {
+      "checksum": "5ce64fca0d7d824a22d648d8d5023700"
+    },
+    "data/map_leaflet_tiles.rda": {
+      "checksum": "2b394a0bf9a64f655f9adc540f0f4731"
+    },
+    "data/map_leaflet_topo250.rda": {
+      "checksum": "f1e0ec71938b9621bed3f0740a5f6123"
+    },
+    "data/map_regions_lux.rda": {
+      "checksum": "9d6da36ed60ba9934fb02afb8d236650"
+    },
+    "data/map_regions_zoi.rda": {
+      "checksum": "36f9431e7ab0ffe7d6c323ad86c2bda3"
+    },
+    "data/map_satellite_lux.rda": {
+      "checksum": "f2aa99c2b7102b1d0055faf6bbf6cbd5"
+    },
+    "data/map_satellite_zoi.rda": {
+      "checksum": "7871b45855d3fa0d301d92f2d44e0b39"
+    },
+    "data/map_tiles.rda": {
+      "checksum": "ec760db2a6363d239ac5e3e3dddca68f"
+    },
+    "data/map_tiles_lux.rda": {
+      "checksum": "b5e4fc5ddd03afad650a41ec915fa4b5"
+    },
+    "data/map_tiles_zoi.rda": {
+      "checksum": "8b623826a958bacdaa02977db170c85b"
+    },
+    "data/map_topo.rda": {
+      "checksum": "10bc5c757b1ca69c3d44064897130271"
+    },
+    "data/map_topo_lux.rda": {
+      "checksum": "e132ef68979666adeccd930f678eac04"
+    },
+    "data/map_topo_zoi.rda": {
+      "checksum": "c35a362b69518363cb12ab6c1571dacb"
+    },
+    "data/mapt_satellite.rda": {
+      "checksum": "eccfc89816faf15daec7fe54bc43875f"
+    },
+    "data/mapt_satellite_lux.rda": {
+      "checksum": "f48eb4de31b3bb1be0a3696259396b68"
+    },
+    "data/mapt_satellite_zoi.rda": {
+      "checksum": "ba4341d7bf3f18ecb776a36f8bbe2795"
+    },
+    "data/metadata_brothscreening.rda": {
+      "checksum": "b62f8a3eff9c8ae8ca134646c77e4a68"
+    },
+    "data/metadata_extracts.rda": {
+      "checksum": "611cff95f299c9c428724dc56f096c23"
+    },
+    "data/metadata_screening.rda": {
+      "checksum": "7bb71a7aee96499da3404400e2e10a80"
+    },
+    "data/metadata_semipures.rda": {
+      "checksum": "3f5fe5482b8c7e94985544cb21691727"
+    },
+    "data/multiplate_layout_extracts.rda": {
+      "checksum": "ae1fd4c8f41951606d33838cbf3c8457"
+    },
+    "data/status_info.rda": {
+      "checksum": "e81fb72bb5b081faa789cb1a4d732e93"
+    },
+    "data/tree.rda": {
+      "checksum": "92b3b85619c8477617f21ad04d68656b"
+    },
+    "DESCRIPTION": {
+      "checksum": "217a27356ac01b7a3d44c6dc20a9b311"
+    },
+    "NAMESPACE": {
+      "checksum": "dc21c19f0d6968ee25d441b2cf46017d"
+    },
+    "R/mod_extracts.R": {
+      "checksum": "eb796a4a9fa380700de4293bd3ad3827"
+    },
+    "R/mod_individual_fungi.R": {
+      "checksum": "5e9d624ec46739f35e833dbd2483df9f"
+    },
+    "R/mod_screening_lux.R": {
+      "checksum": "479c1887bc7f426ffdd5ccdb37fdb7a1"
+    },
+    "R/mod_screening_zoi.R": {
+      "checksum": "1c93ae69aa424c150be66d95ba0b714b"
+    },
+    "R/mod_semipures.R": {
+      "checksum": "e593c552fb8c5ea357f7fffd65554d27"
+    },
+    "R/mod_valuebox_button.R": {
+      "checksum": "f40b111cb2f8e3b8865b93603e198451"
+    },
+    "R/plotly.R": {
+      "checksum": "59a739a6c0af6930509ffbf728aafae0"
+    },
+    "R/plots.R": {
+      "checksum": "0e7fb42364a47342479c4403612123a1"
+    },
+    "R/source.R": {
+      "checksum": "77b25776e89cc2f8a98db898cca508aa"
+    },
+    "renv.lock": {
+      "checksum": "ae5c0faf65de664b0bf9bfc819dd5397"
+    }
+  },
+  "users": null
+}
